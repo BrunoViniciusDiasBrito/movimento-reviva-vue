@@ -1,0 +1,55 @@
+@mixin resize($imageSize, $size) {
+  img {
+    width: $imageSize;
+  }
+  @media only screen and (max-width: 600px) {
+    flex-basis: $size;
+  }
+}
+
+.work-flow {
+  min-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+
+  .__worship {
+    flex-basis: 50%;
+    //  flex-grow: 1;
+    @include resize(100%, 100%);
+  }
+
+  .__prayer {
+    flex-basis: 50%;
+    // flex-grow: 1;
+    @include resize(100%, 100%);
+  }
+
+  .__study {
+    flex-basis: 50%;
+    // flex-grow: 1;
+    @include resize(100%, 100%);
+  }
+
+  .__missions {
+    flex-basis: 50%;
+    // flex-grow: 1;
+    @include resize(100%, 100%);
+  }
+
+  .__reflexion {
+    position: absolute;
+    max-width: 600px;
+    max-height: 600px;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: none;
+    }
+  }
+}

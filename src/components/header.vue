@@ -1,7 +1,7 @@
 <template>
   <header class="header__container">
     <div>
-      <p class="header__message">Fique ligado para mais informações</p>
+      <p class="header__message">Todos os Domingos as <span>18:00 hrs</span></p>
     </div>
 
     <Navbar />

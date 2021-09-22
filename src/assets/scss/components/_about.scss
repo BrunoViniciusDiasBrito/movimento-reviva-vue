@@ -1,0 +1,75 @@
+@mixin mediaquery($maxWidth, $width, $padX, $padY) {
+  @media only screen and (max-width: $maxWidth) {
+    width: $width;
+    padding: $padX $padY;
+  }
+}
+
+.about {
+  .context {
+    padding: 50px 100px;
+    position: relative;
+
+    h1 {
+      display: inline-block;
+      position: relative;
+      color: #fafafa;
+      width: 300px;
+
+      &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #ff8800;
+        position: absolute;
+        z-index: -1;
+        padding-right: 40px;
+        left: -30px;
+        transform: rotateZ(-1deg);
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #a532f1;
+        position: absolute;
+        z-index: -2;
+        padding-right: 40px;
+        left: -20px;
+        top: 0;
+        transform: rotateZ(-2deg);
+      }
+
+      @include mediaquery(966px, 100%, 0, 0);
+    }
+
+    .__body {
+      max-width: 600px;
+      margin: 0 auto;
+
+      p {
+        color: #fafafa;
+        font-size: 1.1em;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 95%;
+      top: 30px;
+      background: #685f56;
+      position: absolute;
+      z-index: -3;
+      padding-right: 40px;
+      left: -30px;
+      transform: rotateZ(-1deg);
+    }
+
+    @include mediaquery(966px, initial, 50px, 40px);
+  }
+}

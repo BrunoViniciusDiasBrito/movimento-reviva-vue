@@ -1,2 +1,32 @@
+//Variaveis
+@import "./utils/variables";
+
 @import "./components/header";
 @import "./components/navbar";
+@import "./components/home";
+@import "./components/about";
+@import "./components/contact";
+@import "./utils/transitions";
+@import "./components/component/banner";
+@import "./components/component/feature";
+@import "./components/component/midiaSection";
+@import "./components/component/calender";
+@import "./components/workFlow";
+@import "./components/footer";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: #fafafa;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  max-width: 100%;
+  overflow: hidden;
+}

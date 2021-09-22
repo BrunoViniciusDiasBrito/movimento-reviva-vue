@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  background: #333;
+
+  .copyright {
+    flex-grow: 1;
+    color: $footerColor;
+
+    span {
+      color: #7a7a7a;
+    }
+
+    a {
+      color: #fafafa;
+      text-decoration: none;
+
+      &:hover {
+        color: #eaeaea;
+      }
+    }
+  }
+
+  .midias {
+    flex-grow: 1;
+    color: $footerColor;
+  }
+}

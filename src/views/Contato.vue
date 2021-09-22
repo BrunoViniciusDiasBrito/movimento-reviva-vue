@@ -1,10 +1,19 @@
 <template>
-  <h1>Contato</h1>
-  <p>RVV</p>
+  <div class="contact">
+    <h1>Contato</h1>
+    <ContactForm />
+    <Location />
+    <InstaSection />
+  </div>
 </template>
 
 <script>
-export default {};
+import ContactForm from "@/components/contactForm";
+import Location from "@/components/location";
+import InstaSection from "@/components/instagramSection";
+export default {
+  components: { ContactForm, Location, InstaSection },
+};
 </script>
 
 <style></style>

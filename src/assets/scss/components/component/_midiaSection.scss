@@ -1,0 +1,105 @@
+@mixin resize($base) {
+  @media only screen and (max-width: 340px) {
+    flex-basis: $base;
+  }
+}
+
+.instagram-section {
+  padding: 33px 0 35px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  .component {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e1e1e196;
+    border-radius: 5px;
+    padding: 12px 24px;
+
+    .__image {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 15px;
+      border: 2.5px solid rgb(230, 45, 217);
+
+      img {
+        width: 95%;
+        border-radius: 50%;
+      }
+
+      @media only screen and (max-width: 340px) {
+        margin-bottom: 20px;
+      }
+
+      &:hover {
+        animation-name: circleRotation;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+      }
+    }
+
+    .name-wrap {
+      margin-right: 20px;
+      text-align: left;
+
+      .__tag {
+        font-size: 1em;
+        font-weight: 600;
+      }
+
+      .__name {
+        font-size: 0.765em;
+      }
+
+      @media only screen and (max-width: 340px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    .__followers {
+      background: rgb(72, 143, 219);
+      padding: 5px 8px;
+      border-radius: 5px;
+
+      &:hover {
+        background: rgb(61, 120, 184);
+      }
+
+      a {
+        text-decoration: none;
+        color: #fafafa;
+      }
+
+      @include resize(100%);
+    }
+
+    @media only screen and (max-width: 340px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+  }
+}
+
+@keyframes circleRotation {
+  0% {
+    // transform: rotate(45deg);
+    border: 2.5px solid rgb(230, 45, 217);
+  }
+
+  50% {
+    // transform: rotate(360deg);
+    border: 2.5px solid rgb(238, 135, 51);
+  }
+
+  100% {
+    // transform: rotate(45deg);
+    border: 2.5px solid rgb(230, 45, 217);
+  }
+}
