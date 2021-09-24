@@ -1,3 +1,4 @@
+// Transitio do menu mobile
 .slide-fade-enter-active,
 .slide-fade-leave-active {
   transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
@@ -12,6 +13,17 @@
 .slide-fade-enter,
 .slide-fade-enter-to {
   animation: enter 0.5s ease-in-out;
+}
+
+// Transition pages
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-leave-from,
+.v-enter-to {
+  opacity: 1;
 }
 
 @keyframes enter {

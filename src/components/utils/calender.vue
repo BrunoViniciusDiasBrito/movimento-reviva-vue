@@ -2,24 +2,16 @@
   <div class="calender">
     <h1>Nossos Encontros</h1>
     <table>
-      <tr>
-        <th>Segunda</th>
-        <th>Terça</th>
-        <th>Quarta</th>
-        <th>Quinta</th>
-        <th>Sexta</th>
-        <th>Sábado</th>
-        <th>Domingo</th>
-      </tr>
-      <tr>
-        <td>none</td>
-        <td>none</td>
-        <td>none</td>
-        <td>none</td>
-        <td>none</td>
-        <td>none</td>
-        <td>18:00 hrs</td>
-      </tr>
+      <tbody>
+        <tr>
+          <th>Sábado</th>
+          <th>Domingo</th>
+        </tr>
+        <tr>
+          <td>Soon...</td>
+          <td>18:00 hrs</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </template>

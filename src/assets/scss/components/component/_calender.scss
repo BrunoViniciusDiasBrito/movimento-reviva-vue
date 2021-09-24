@@ -1,5 +1,5 @@
 .cronograma {
-  min-height: 600px;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,20 +42,22 @@
     table {
       margin: 0 auto;
 
-      tr {
-        th {
-          padding: 5px 10px;
-        }
+      tbody {
+        tr {
+          th {
+            padding: 5px 10px;
+          }
 
-        td {
-          padding: 5px;
-          border-right: 1px solid #777;
-          color: red;
-          font-weight: 600;
+          td {
+            padding: 5px;
+            border-right: 1px solid #777;
+            color: red;
+            font-weight: 600;
 
-          &:last-child {
-            color: green;
-            border-right: none;
+            &:last-child {
+              color: green;
+              border-right: none;
+            }
           }
         }
       }
